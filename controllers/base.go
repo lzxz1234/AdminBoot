@@ -16,14 +16,6 @@ type BootController struct {
 	beego.Controller
 }
 
-// Get 获取首页
-func (c *BootController) Get() {
-
-	c.Data["Website"] = "beego.me"
-	c.Data["Email"] = "astaxie@gmail.com"
-	c.TplName = "index.tpl"
-}
-
 // BaseController 封装通用方法
 type BaseController struct {
 	beego.Controller
@@ -35,8 +27,8 @@ func (c *BaseController) Render() error {
 	if !c.EnableRender {
 		return nil
 	}
-	c.Data["siteName"] = beego.AppConfig.String("siteName")
-	c.Data["siteSubName"] = beego.AppConfig.String("siteSubName")
+	c.Data["siteName"] = beego.AppConfig.String("boot.siteName")
+	c.Data["siteSubName"] = beego.AppConfig.String("boot.siteSubName")
 
 	c.Data["me"] = c.GetAuthUser()
 	authActions := c.GetSession("authActions")
