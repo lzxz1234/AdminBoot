@@ -3,8 +3,8 @@ package controllers
 import (
 	"strconv"
 
-	"git.lzxz1234.cn/lzxz1234/AdminBoot/models"
-	"git.lzxz1234.cn/lzxz1234/AdminBoot/utils"
+	"github.com/lzxz1234/AdminBoot/models"
+	"github.com/lzxz1234/AdminBoot/utils"
 )
 
 // AuthRoleController role api

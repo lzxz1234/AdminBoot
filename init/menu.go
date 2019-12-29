@@ -1,23 +1,23 @@
 package init
 
 import (
-	"git.lzxz1234.cn/lzxz1234/AdminBoot/models"
 	"github.com/astaxie/beego/logs"
+	"github.com/lzxz1234/AdminBoot/models"
 )
 
 func init() {
 
-	authID := initMenu("权限管理", "", 0, 0, "")
-	initMenu("人员列表", "/auth/user/", authID, 0, "RBAC.USER.LIST")
-	initMenu("角色列表", "/auth/role/", authID, 0, "RBAC.ROLE.LIST")
+	authID := NewMenu("权限管理", "", 0, 0, "")
+	NewMenu("人员列表", "/auth/user/", authID, 0, "RBAC.USER.LIST")
+	NewMenu("角色列表", "/auth/role/", authID, 0, "RBAC.ROLE.LIST")
 
-	initHref("查询人员列表", "/auth/user/list/", 0, "RBAC.USER.LIST", 1)
-	initHref("添加修改人员信息", "/auth/user/*", 0, "RBAC.USER.MOD", 1)
-	initHref("查询角色列表", "/auth/role/list/", 0, "RBAC.ROLE.LIST", 1)
-	initHref("添加修改角色信息", "/auth/role/*", 0, "RBAC.ROLE.MOD", 1)
+	NewHref("查询人员列表", "/auth/user/list/", 0, "RBAC.USER.LIST", 1)
+	NewHref("添加修改人员信息", "/auth/user/*", 0, "RBAC.USER.MOD", 1)
+	NewHref("查询角色列表", "/auth/role/list/", 0, "RBAC.ROLE.LIST", 1)
+	NewHref("添加修改角色信息", "/auth/role/*", 0, "RBAC.ROLE.MOD", 1)
 }
 
-func initMenu(name string, href string, pid int, userID int, actionCode string) int {
+func NewMenu(name string, href string, pid int, userID int, actionCode string) int {
 
 	menu := models.AuthResource{
 		Name:     name,
@@ -36,7 +36,7 @@ func initMenu(name string, href string, pid int, userID int, actionCode string) 
 	return menu.ID
 }
 
-func initHref(name string, href string, userID int, actionCode string, authType int) int {
+func NewHref(name string, href string, userID int, actionCode string, authType int) int {
 
 	resource := models.AuthResource{
 		Name:     name,

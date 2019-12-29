@@ -1,7 +1,7 @@
 package controllers
 
 import (
-	"git.lzxz1234.cn/lzxz1234/AdminBoot/utils/aes"
+	"github.com/lzxz1234/AdminBoot/utils/aes"
 )
 
 // SelfManageController 个人信息维护

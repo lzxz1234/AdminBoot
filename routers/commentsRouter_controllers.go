@@ -7,7 +7,7 @@ import (
 
 func init() {
 
-    beego.GlobalControllerRouter["git.lzxz1234.cn/lzxz1234/AdminBoot/controllers:AuthLoginController"] = append(beego.GlobalControllerRouter["git.lzxz1234.cn/lzxz1234/AdminBoot/controllers:AuthLoginController"],
+    beego.GlobalControllerRouter["github.com/lzxz1234/AdminBoot/controllers:AuthLoginController"] = append(beego.GlobalControllerRouter["github.com/lzxz1234/AdminBoot/controllers:AuthLoginController"],
         beego.ControllerComments{
             Method: "Index",
             Router: `/`,
@@ -16,7 +16,7 @@ func init() {
             Filters: nil,
             Params: nil})
 
-    beego.GlobalControllerRouter["git.lzxz1234.cn/lzxz1234/AdminBoot/controllers:AuthLoginController"] = append(beego.GlobalControllerRouter["git.lzxz1234.cn/lzxz1234/AdminBoot/controllers:AuthLoginController"],
+    beego.GlobalControllerRouter["github.com/lzxz1234/AdminBoot/controllers:AuthLoginController"] = append(beego.GlobalControllerRouter["github.com/lzxz1234/AdminBoot/controllers:AuthLoginController"],
         beego.ControllerComments{
             Method: "GetLogin",
             Router: `/login`,
@@ -25,7 +25,7 @@ func init() {
             Filters: nil,
             Params: nil})
 
-    beego.GlobalControllerRouter["git.lzxz1234.cn/lzxz1234/AdminBoot/controllers:AuthLoginController"] = append(beego.GlobalControllerRouter["git.lzxz1234.cn/lzxz1234/AdminBoot/controllers:AuthLoginController"],
+    beego.GlobalControllerRouter["github.com/lzxz1234/AdminBoot/controllers:AuthLoginController"] = append(beego.GlobalControllerRouter["github.com/lzxz1234/AdminBoot/controllers:AuthLoginController"],
         beego.ControllerComments{
             Method: "Login",
             Router: `/login`,
@@ -34,7 +34,7 @@ func init() {
             Filters: nil,
             Params: nil})
 
-    beego.GlobalControllerRouter["git.lzxz1234.cn/lzxz1234/AdminBoot/controllers:AuthLoginController"] = append(beego.GlobalControllerRouter["git.lzxz1234.cn/lzxz1234/AdminBoot/controllers:AuthLoginController"],
+    beego.GlobalControllerRouter["github.com/lzxz1234/AdminBoot/controllers:AuthLoginController"] = append(beego.GlobalControllerRouter["github.com/lzxz1234/AdminBoot/controllers:AuthLoginController"],
         beego.ControllerComments{
             Method: "Logout",
             Router: `/logout`,
@@ -43,7 +43,7 @@ func init() {
             Filters: nil,
             Params: nil})
 
-    beego.GlobalControllerRouter["git.lzxz1234.cn/lzxz1234/AdminBoot/controllers:AuthRoleController"] = append(beego.GlobalControllerRouter["git.lzxz1234.cn/lzxz1234/AdminBoot/controllers:AuthRoleController"],
+    beego.GlobalControllerRouter["github.com/lzxz1234/AdminBoot/controllers:AuthRoleController"] = append(beego.GlobalControllerRouter["github.com/lzxz1234/AdminBoot/controllers:AuthRoleController"],
         beego.ControllerComments{
             Method: "Index",
             Router: `/`,
@@ -52,7 +52,7 @@ func init() {
             Filters: nil,
             Params: nil})
 
-    beego.GlobalControllerRouter["git.lzxz1234.cn/lzxz1234/AdminBoot/controllers:AuthRoleController"] = append(beego.GlobalControllerRouter["git.lzxz1234.cn/lzxz1234/AdminBoot/controllers:AuthRoleController"],
+    beego.GlobalControllerRouter["github.com/lzxz1234/AdminBoot/controllers:AuthRoleController"] = append(beego.GlobalControllerRouter["github.com/lzxz1234/AdminBoot/controllers:AuthRoleController"],
         beego.ControllerComments{
             Method: "Add",
             Router: `/add`,
@@ -61,7 +61,7 @@ func init() {
             Filters: nil,
             Params: nil})
 
-    beego.GlobalControllerRouter["git.lzxz1234.cn/lzxz1234/AdminBoot/controllers:AuthRoleController"] = append(beego.GlobalControllerRouter["git.lzxz1234.cn/lzxz1234/AdminBoot/controllers:AuthRoleController"],
+    beego.GlobalControllerRouter["github.com/lzxz1234/AdminBoot/controllers:AuthRoleController"] = append(beego.GlobalControllerRouter["github.com/lzxz1234/AdminBoot/controllers:AuthRoleController"],
         beego.ControllerComments{
             Method: "DoAdd",
             Router: `/add`,
@@ -70,7 +70,7 @@ func init() {
             Filters: nil,
             Params: nil})
 
-    beego.GlobalControllerRouter["git.lzxz1234.cn/lzxz1234/AdminBoot/controllers:AuthRoleController"] = append(beego.GlobalControllerRouter["git.lzxz1234.cn/lzxz1234/AdminBoot/controllers:AuthRoleController"],
+    beego.GlobalControllerRouter["github.com/lzxz1234/AdminBoot/controllers:AuthRoleController"] = append(beego.GlobalControllerRouter["github.com/lzxz1234/AdminBoot/controllers:AuthRoleController"],
         beego.ControllerComments{
             Method: "Info",
             Router: `/detail`,
@@ -79,7 +79,7 @@ func init() {
             Filters: nil,
             Params: nil})
 
-    beego.GlobalControllerRouter["git.lzxz1234.cn/lzxz1234/AdminBoot/controllers:AuthRoleController"] = append(beego.GlobalControllerRouter["git.lzxz1234.cn/lzxz1234/AdminBoot/controllers:AuthRoleController"],
+    beego.GlobalControllerRouter["github.com/lzxz1234/AdminBoot/controllers:AuthRoleController"] = append(beego.GlobalControllerRouter["github.com/lzxz1234/AdminBoot/controllers:AuthRoleController"],
         beego.ControllerComments{
             Method: "List",
             Router: `/list`,
@@ -88,7 +88,7 @@ func init() {
             Filters: nil,
             Params: nil})
 
-    beego.GlobalControllerRouter["git.lzxz1234.cn/lzxz1234/AdminBoot/controllers:AuthRoleController"] = append(beego.GlobalControllerRouter["git.lzxz1234.cn/lzxz1234/AdminBoot/controllers:AuthRoleController"],
+    beego.GlobalControllerRouter["github.com/lzxz1234/AdminBoot/controllers:AuthRoleController"] = append(beego.GlobalControllerRouter["github.com/lzxz1234/AdminBoot/controllers:AuthRoleController"],
         beego.ControllerComments{
             Method: "Mod",
             Router: `/mod`,
@@ -97,7 +97,7 @@ func init() {
             Filters: nil,
             Params: nil})
 
-    beego.GlobalControllerRouter["git.lzxz1234.cn/lzxz1234/AdminBoot/controllers:AuthRoleController"] = append(beego.GlobalControllerRouter["git.lzxz1234.cn/lzxz1234/AdminBoot/controllers:AuthRoleController"],
+    beego.GlobalControllerRouter["github.com/lzxz1234/AdminBoot/controllers:AuthRoleController"] = append(beego.GlobalControllerRouter["github.com/lzxz1234/AdminBoot/controllers:AuthRoleController"],
         beego.ControllerComments{
             Method: "DoMod",
             Router: `/mod`,
@@ -106,7 +106,7 @@ func init() {
             Filters: nil,
             Params: nil})
 
-    beego.GlobalControllerRouter["git.lzxz1234.cn/lzxz1234/AdminBoot/controllers:AuthUserController"] = append(beego.GlobalControllerRouter["git.lzxz1234.cn/lzxz1234/AdminBoot/controllers:AuthUserController"],
+    beego.GlobalControllerRouter["github.com/lzxz1234/AdminBoot/controllers:AuthUserController"] = append(beego.GlobalControllerRouter["github.com/lzxz1234/AdminBoot/controllers:AuthUserController"],
         beego.ControllerComments{
             Method: "Index",
             Router: `/`,
@@ -115,7 +115,7 @@ func init() {
             Filters: nil,
             Params: nil})
 
-    beego.GlobalControllerRouter["git.lzxz1234.cn/lzxz1234/AdminBoot/controllers:AuthUserController"] = append(beego.GlobalControllerRouter["git.lzxz1234.cn/lzxz1234/AdminBoot/controllers:AuthUserController"],
+    beego.GlobalControllerRouter["github.com/lzxz1234/AdminBoot/controllers:AuthUserController"] = append(beego.GlobalControllerRouter["github.com/lzxz1234/AdminBoot/controllers:AuthUserController"],
         beego.ControllerComments{
             Method: "Add",
             Router: `/add`,
@@ -124,7 +124,7 @@ func init() {
             Filters: nil,
             Params: nil})
 
-    beego.GlobalControllerRouter["git.lzxz1234.cn/lzxz1234/AdminBoot/controllers:AuthUserController"] = append(beego.GlobalControllerRouter["git.lzxz1234.cn/lzxz1234/AdminBoot/controllers:AuthUserController"],
+    beego.GlobalControllerRouter["github.com/lzxz1234/AdminBoot/controllers:AuthUserController"] = append(beego.GlobalControllerRouter["github.com/lzxz1234/AdminBoot/controllers:AuthUserController"],
         beego.ControllerComments{
             Method: "DoAdd",
             Router: `/add`,
@@ -133,7 +133,7 @@ func init() {
             Filters: nil,
             Params: nil})
 
-    beego.GlobalControllerRouter["git.lzxz1234.cn/lzxz1234/AdminBoot/controllers:AuthUserController"] = append(beego.GlobalControllerRouter["git.lzxz1234.cn/lzxz1234/AdminBoot/controllers:AuthUserController"],
+    beego.GlobalControllerRouter["github.com/lzxz1234/AdminBoot/controllers:AuthUserController"] = append(beego.GlobalControllerRouter["github.com/lzxz1234/AdminBoot/controllers:AuthUserController"],
         beego.ControllerComments{
             Method: "List",
             Router: `/list`,
@@ -142,7 +142,7 @@ func init() {
             Filters: nil,
             Params: nil})
 
-    beego.GlobalControllerRouter["git.lzxz1234.cn/lzxz1234/AdminBoot/controllers:AuthUserController"] = append(beego.GlobalControllerRouter["git.lzxz1234.cn/lzxz1234/AdminBoot/controllers:AuthUserController"],
+    beego.GlobalControllerRouter["github.com/lzxz1234/AdminBoot/controllers:AuthUserController"] = append(beego.GlobalControllerRouter["github.com/lzxz1234/AdminBoot/controllers:AuthUserController"],
         beego.ControllerComments{
             Method: "Mod",
             Router: `/mod`,
@@ -151,7 +151,7 @@ func init() {
             Filters: nil,
             Params: nil})
 
-    beego.GlobalControllerRouter["git.lzxz1234.cn/lzxz1234/AdminBoot/controllers:AuthUserController"] = append(beego.GlobalControllerRouter["git.lzxz1234.cn/lzxz1234/AdminBoot/controllers:AuthUserController"],
+    beego.GlobalControllerRouter["github.com/lzxz1234/AdminBoot/controllers:AuthUserController"] = append(beego.GlobalControllerRouter["github.com/lzxz1234/AdminBoot/controllers:AuthUserController"],
         beego.ControllerComments{
             Method: "DoMod",
             Router: `/mod`,
@@ -160,7 +160,7 @@ func init() {
             Filters: nil,
             Params: nil})
 
-    beego.GlobalControllerRouter["git.lzxz1234.cn/lzxz1234/AdminBoot/controllers:AuthUserController"] = append(beego.GlobalControllerRouter["git.lzxz1234.cn/lzxz1234/AdminBoot/controllers:AuthUserController"],
+    beego.GlobalControllerRouter["github.com/lzxz1234/AdminBoot/controllers:AuthUserController"] = append(beego.GlobalControllerRouter["github.com/lzxz1234/AdminBoot/controllers:AuthUserController"],
         beego.ControllerComments{
             Method: "ModState",
             Router: `/modState`,
@@ -169,7 +169,7 @@ func init() {
             Filters: nil,
             Params: nil})
 
-    beego.GlobalControllerRouter["git.lzxz1234.cn/lzxz1234/AdminBoot/controllers:CmnFileController"] = append(beego.GlobalControllerRouter["git.lzxz1234.cn/lzxz1234/AdminBoot/controllers:CmnFileController"],
+    beego.GlobalControllerRouter["github.com/lzxz1234/AdminBoot/controllers:CmnFileController"] = append(beego.GlobalControllerRouter["github.com/lzxz1234/AdminBoot/controllers:CmnFileController"],
         beego.ControllerComments{
             Method: "Upload",
             Router: `/upload`,
@@ -178,7 +178,7 @@ func init() {
             Filters: nil,
             Params: nil})
 
-    beego.GlobalControllerRouter["git.lzxz1234.cn/lzxz1234/AdminBoot/controllers:SelfManageController"] = append(beego.GlobalControllerRouter["git.lzxz1234.cn/lzxz1234/AdminBoot/controllers:SelfManageController"],
+    beego.GlobalControllerRouter["github.com/lzxz1234/AdminBoot/controllers:SelfManageController"] = append(beego.GlobalControllerRouter["github.com/lzxz1234/AdminBoot/controllers:SelfManageController"],
         beego.ControllerComments{
             Method: "Info",
             Router: `/info`,
@@ -187,7 +187,7 @@ func init() {
             Filters: nil,
             Params: nil})
 
-    beego.GlobalControllerRouter["git.lzxz1234.cn/lzxz1234/AdminBoot/controllers:SelfManageController"] = append(beego.GlobalControllerRouter["git.lzxz1234.cn/lzxz1234/AdminBoot/controllers:SelfManageController"],
+    beego.GlobalControllerRouter["github.com/lzxz1234/AdminBoot/controllers:SelfManageController"] = append(beego.GlobalControllerRouter["github.com/lzxz1234/AdminBoot/controllers:SelfManageController"],
         beego.ControllerComments{
             Method: "InfoMod",
             Router: `/info`,
@@ -196,7 +196,7 @@ func init() {
             Filters: nil,
             Params: nil})
 
-    beego.GlobalControllerRouter["git.lzxz1234.cn/lzxz1234/AdminBoot/controllers:SelfManageController"] = append(beego.GlobalControllerRouter["git.lzxz1234.cn/lzxz1234/AdminBoot/controllers:SelfManageController"],
+    beego.GlobalControllerRouter["github.com/lzxz1234/AdminBoot/controllers:SelfManageController"] = append(beego.GlobalControllerRouter["github.com/lzxz1234/AdminBoot/controllers:SelfManageController"],
         beego.ControllerComments{
             Method: "Pass",
             Router: `/pass`,
@@ -205,7 +205,7 @@ func init() {
             Filters: nil,
             Params: nil})
 
-    beego.GlobalControllerRouter["git.lzxz1234.cn/lzxz1234/AdminBoot/controllers:SelfManageController"] = append(beego.GlobalControllerRouter["git.lzxz1234.cn/lzxz1234/AdminBoot/controllers:SelfManageController"],
+    beego.GlobalControllerRouter["github.com/lzxz1234/AdminBoot/controllers:SelfManageController"] = append(beego.GlobalControllerRouter["github.com/lzxz1234/AdminBoot/controllers:SelfManageController"],
         beego.ControllerComments{
             Method: "PassMod",
             Router: `/pass`,

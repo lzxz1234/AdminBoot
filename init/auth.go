@@ -1,11 +1,12 @@
 package init
 
 import (
-	"git.lzxz1234.cn/lzxz1234/AdminBoot/models"
-	"git.lzxz1234.cn/lzxz1234/AdminBoot/utils"
-	"git.lzxz1234.cn/lzxz1234/AdminBoot/utils/aes"
+	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/logs"
 	"github.com/astaxie/beego/orm"
+	"github.com/lzxz1234/AdminBoot/models"
+	"github.com/lzxz1234/AdminBoot/utils"
+	"github.com/lzxz1234/AdminBoot/utils/aes"
 )
 
 var o = orm.NewOrm()
@@ -23,7 +24,10 @@ func init() {
 			admin.CreateTime = utils.Now()
 			admin.LastLoginTime = utils.Now()
 			o.Update(&admin)
+		} else if beego.AppConfig.String("boot.password") != "" {
+			admin.Password = aes.EncryptString(beego.AppConfig.String("boot.password"))
 		}
+		o.Update(&admin)
 	}
 
 	role := models.AuthRole{Name: "超级管理员"}
@@ -38,13 +42,13 @@ func init() {
 		o.Raw("insert into t_auth_role_user(role_id, user_id) values(?,?)", role.ID, admin.ID).Exec()
 	}
 
-	initAction("RBAC.USER.LIST", "人员查看", "权限控制", "查看管理员列表，信息等")
-	initAction("RBAC.USER.MOD", "人员修改", "权限控制", "修改管理员信息，角色列表，执行禁用等操作")
-	initAction("RBAC.ROLE.LIST", "角色查看", "权限控制", "查看系统角色列表，信息等")
-	initAction("RBAC.ROLE.MOD", "角色修改", "权限控制", "修改角色信息、对应权限等操作")
+	NewAction("RBAC.USER.LIST", "人员查看", "权限控制", "查看管理员列表，信息等")
+	NewAction("RBAC.USER.MOD", "人员修改", "权限控制", "修改管理员信息，角色列表，执行禁用等操作")
+	NewAction("RBAC.ROLE.LIST", "角色查看", "权限控制", "查看系统角色列表，信息等")
+	NewAction("RBAC.ROLE.MOD", "角色修改", "权限控制", "修改角色信息、对应权限等操作")
 }
 
-func initAction(code string, name string, group string, description string) {
+func NewAction(code string, name string, group string, description string) {
 
 	adminRole := models.AuthRole{Name: "超级管理员"}
 	err := o.Read(&adminRole, "Name")

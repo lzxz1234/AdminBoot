@@ -1,8 +1,8 @@
 package routers
 
 import (
-	"git.lzxz1234.cn/lzxz1234/AdminBoot/controllers"
 	"github.com/astaxie/beego"
+	"github.com/lzxz1234/AdminBoot/controllers"
 )
 
 func init() {
@@ -24,5 +24,5 @@ func init() {
 		beego.NSInclude(&controllers.SelfManageController{}),
 	)
 	beego.AddNamespace(ns)
-	beego.Router("/", &controllers.MainController{})
+	beego.Router("/", &controllers.BootController{})
 }

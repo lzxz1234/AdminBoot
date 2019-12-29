@@ -10,8 +10,8 @@ import (
 )
 
 func init() {
-	driverName := beego.AppConfig.String("database.driver")
-	dataSource := beego.AppConfig.String("database.source")
+	driverName := beego.AppConfig.String("boot.db.driver")
+	dataSource := beego.AppConfig.String("boot.db.source")
 
 	orm.RegisterDataBase("default", driverName, dataSource, 30)
 

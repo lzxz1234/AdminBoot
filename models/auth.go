@@ -1,7 +1,7 @@
 package models
 
 import (
-	"git.lzxz1234.cn/lzxz1234/AdminBoot/utils"
+	"github.com/lzxz1234/AdminBoot/utils"
 )
 
 // AuthUser system administrators
@@ -16,7 +16,7 @@ type AuthUser struct {
 	CreateTime    utils.Time `orm:"auto_now_add"`
 	LastLoginTime utils.Time `orm:"auto_now"`
 
-	Roles []*AuthRole `orm:"rel(m2m);rel_through(git.lzxz1234.cn/lzxz1234/AdminBoot/models.AuthRoleUser)"`
+	Roles []*AuthRole `orm:"rel(m2m);rel_through(github.com/lzxz1234/AdminBoot/models.AuthRoleUser)"`
 }
 
 // AuthRole system roles
@@ -25,7 +25,7 @@ type AuthRole struct {
 	Name        string
 	Description string
 
-	Actions []*AuthAction `orm:"rel(m2m);rel_through(git.lzxz1234.cn/lzxz1234/AdminBoot/models.AuthRoleAction)"`
+	Actions []*AuthAction `orm:"rel(m2m);rel_through(github.com/lzxz1234/AdminBoot/models.AuthRoleAction)"`
 	Users   []*AuthUser   `orm:"reverse(many)"`
 }
 

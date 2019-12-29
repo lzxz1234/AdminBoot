@@ -25,7 +25,7 @@
         <div class="layui-form-item">
             <label class="layui-form-label"><i class="layui-icon layui-icon-password"></i> 密　码</label>
             <div class="layui-input-block">
-                <input type="password" name="password" placeholder="请输入密码" autocomplete="off" class="layui-input" value="admin123!">
+                <input type="password" name="password" placeholder="请输入密码" autocomplete="off" class="layui-input">
             </div>
         </div>
         

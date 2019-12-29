@@ -12,8 +12,8 @@ import (
 
 	"github.com/nfnt/resize"
 
-	"git.lzxz1234.cn/lzxz1234/AdminBoot/utils"
 	"github.com/astaxie/beego"
+	"github.com/lzxz1234/AdminBoot/utils"
 	"github.com/qiniu/api.v7/auth/qbox"
 	"github.com/qiniu/api.v7/storage"
 )
@@ -23,10 +23,10 @@ type CmnFileController struct {
 	BaseController
 }
 
-var accessKey = beego.AppConfig.String("qiNiuAccesskey")
-var secretKey = beego.AppConfig.String("qiNiuSecretKey")
-var bucket = beego.AppConfig.String("qiNiuBucket")
-var domain = beego.AppConfig.String("qiNiuDomain")
+var accessKey = beego.AppConfig.String("boot.qiNiuAccesskey")
+var secretKey = beego.AppConfig.String("boot.qiNiuSecretKey")
+var bucket = beego.AppConfig.String("boot.qiNiuBucket")
+var domain = beego.AppConfig.String("boot.qiNiuDomain")
 
 // Upload 通用文件上传
 // @router /upload [post]

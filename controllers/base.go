@@ -3,21 +3,21 @@ package controllers
 import (
 	"strings"
 
-	"git.lzxz1234.cn/lzxz1234/AdminBoot/models"
-	"git.lzxz1234.cn/lzxz1234/AdminBoot/utils"
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/orm"
+	"github.com/lzxz1234/AdminBoot/models"
+	"github.com/lzxz1234/AdminBoot/utils"
 )
 
 var o = orm.NewOrm()
 
-// MainController 首页
-type MainController struct {
+// BootController 首页
+type BootController struct {
 	beego.Controller
 }
 
 // Get 获取首页
-func (c *MainController) Get() {
+func (c *BootController) Get() {
 
 	c.Data["Website"] = "beego.me"
 	c.Data["Email"] = "astaxie@gmail.com"

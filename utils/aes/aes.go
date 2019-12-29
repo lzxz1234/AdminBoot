@@ -7,10 +7,10 @@ import (
 
 	"github.com/astaxie/beego"
 
-	"git.lzxz1234.cn/lzxz1234/AdminBoot/utils/base58"
+	"github.com/lzxz1234/AdminBoot/utils/base58"
 )
 
-var aeskey = []byte(beego.AppConfig.String("aesKey"))
+var aeskey = []byte(beego.AppConfig.String("boot.aesKey"))
 
 func _PKCS5Padding(ciphertext []byte, blockSize int) []byte {
 	padding := blockSize - len(ciphertext)%blockSize

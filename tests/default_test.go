@@ -6,7 +6,7 @@ import (
 	"testing"
 	"runtime"
 	"path/filepath"
-	_ "git.lzxz1234.cn/lzxz1234/AdminBoot/routers"
+	_ "github.com/lzxz1234/AdminBoot/routers"
 
 	"github.com/astaxie/beego"
 	. "github.com/smartystreets/goconvey/convey"
